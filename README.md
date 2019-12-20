@@ -25,10 +25,13 @@ To launch the game (need to be in the directory /project_plugins/)
 ```
 mvn compile
 cd target
-java -classpath classes:extensions fil.coo.App
-
+java -classpath classes:../extensions fil.coo.App &
+cd ..
 ```
-
+or just launch the runner
+```
+./runner.sh
+``` 
 
 ## Running the tests
 
