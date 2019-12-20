@@ -3,7 +3,6 @@ package fil.coo.file;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -74,7 +73,6 @@ public class FileChecker implements ActionListener
 	public void actionPerformed(ActionEvent arg0) 
 	{
 		
-		String [] result;
 		boolean isPresent = false;
 		if (this.files == null)
 		{

@@ -42,10 +42,10 @@ public class FileCheckerTest
 	@Test
 	public void testActionPerformedNewFileAdded() 
 	{
-		File file1,file2;
+		File file1;
 		fileChecker = new FileCheckerMock(listFile,2000);
 		assertFalse(fileChecker.isFireFileAdded);
-		file1 = new File(this.PATH + "hello.class");
+		file1 = new File(FileCheckerTest.PATH + "hello.class");
 		
 		
 	}

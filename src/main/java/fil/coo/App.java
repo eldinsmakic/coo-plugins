@@ -2,12 +2,8 @@
 package fil.coo;
 
 import java.awt.event.WindowAdapter;
-import java.io.FilenameFilter;
-
 import javax.swing.JFrame;
-import javax.swing.JMenu;
 import javax.swing.JMenuBar;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 
@@ -15,7 +11,6 @@ import fil.coo.file.FileChecker;
 import fil.coo.file.listeners.PrintFileListener;
 import fil.coo.file.listeners.gui.JMenuFileListener;
 import fil.coo.file.lister.ListFile;
-import fil.coo.file.lister.ListFileBeginingWithCInFolder;
 import fil.coo.file.lister.ListFilePluginFilter;
 
 /**

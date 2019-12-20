@@ -2,16 +2,9 @@ package fil.coo.file.listeners.gui;
 
 import java.awt.Component;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.AbstractAction;
 import javax.swing.JMenu;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-
-import fil.coo.file.FileChecker;
 import fil.coo.file.FileEvent;
 import fil.coo.file.listeners.FileListener;
 import plugin.Plugin;
@@ -31,6 +24,10 @@ public class JMenuFileListener extends JMenu implements FileListener
 {
 
 	
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
 	JTextArea mainJTextArea;
 	/**
 	 * When Create Link the menu with the JTextArea to manipulate it
@@ -50,6 +47,11 @@ public class JMenuFileListener extends JMenu implements FileListener
 		JMenuItemPlugin menuItem = new JMenuItemPlugin(p);
 		menuItem.addActionListener(new AbstractAction() {
 			
+			/**
+			 *
+			 */
+			private static final long serialVersionUID = 1L;
+
 			public void actionPerformed(ActionEvent e) {
 				mainJTextArea.setText(p.transform(mainJTextArea.getText()));
 				

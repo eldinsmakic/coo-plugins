@@ -2,11 +2,7 @@ package fil.coo.file.listeners.gui;
 
 import java.awt.event.ActionEvent;
 import java.lang.reflect.Constructor;
-import java.net.URL;
-import java.net.URLClassLoader;
-
 import javax.swing.AbstractAction;
-import javax.swing.JMenuItem;
 
 import plugin.Plugin;
 
@@ -27,7 +23,7 @@ public class PluginToJMenuItemFactory
 	 */
 	public Plugin buildPluginFromString(String s)
 	{
-		Class c;
+		Class<?> c;
 		Constructor<?> t ;
 		Plugin p ;
 		
@@ -61,6 +57,11 @@ public class PluginToJMenuItemFactory
 		
 		res.setAction(new AbstractAction() {
 			
+			/**
+			 *
+			 */
+			private static final long serialVersionUID = 1L;
+
 			public void actionPerformed(ActionEvent e) 
 			{
 				System.out.println(e.toString());

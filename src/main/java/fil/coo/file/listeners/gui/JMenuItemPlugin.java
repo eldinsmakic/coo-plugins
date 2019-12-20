@@ -16,6 +16,10 @@ import plugin.Plugin;
  */
 public class JMenuItemPlugin extends JMenuItem
 {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 8655247630076801654L;
 	private Plugin plugin;
 	
 	/**

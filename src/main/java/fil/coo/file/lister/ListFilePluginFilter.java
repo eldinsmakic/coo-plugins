@@ -2,10 +2,6 @@ package fil.coo.file.lister;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.lang.reflect.Constructor;
-import java.net.URL;
-import java.net.URLClassLoader;
-
 import plugin.Plugin;
 
 /**
@@ -107,7 +103,6 @@ public class ListFilePluginFilter implements ListFile,FilenameFilter
 	public boolean isPlugin(String name)
 	{
 		Class<?> c ;
-		Constructor<?> t;
 		try 
 		{
 			c = Class.forName("plugins."+name);
